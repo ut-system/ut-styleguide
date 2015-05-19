@@ -1,6 +1,9 @@
 title: Pattern Library
 description: A collection of patterns to help you build up a style guide for your site
 
+baseurl: /ut-styleguide
+url:     /ut-styleguide
+
 source:      .
 destination: ./_site
 plugins:     ./_plugins
