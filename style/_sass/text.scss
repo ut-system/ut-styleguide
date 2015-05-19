@@ -1,0 +1,128 @@
+body {
+    font-family: $font-sans;
+    font-size: $base-font-size;
+    color: $text;
+    margin: 0;
+    padding: 0;
+    
+    @media print {
+        font-size: $base-font-size;
+        }
+    
+    }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section,
+summary,
+details { 
+    display: block;
+    }
+
+main {
+    clear: both;
+    }
+
+abbr {
+    border-bottom: 1px dotted;
+    @include border-color($color-base, 0.5);
+    }
+
+abbr:hover {
+    cursor: help;
+    }
+
+p,
+ul,
+ol,
+dl {
+    @include rem(line-height, 27px);
+    @include rem(margin, $base-font-size 0);
+    }
+
+@media print {
+	p,
+	ul,
+	ol,
+	dl {
+		@include rem(line-height, 20px);
+		}
+	}
+
+strong {
+    font-weight: bold;
+    }
+
+code,
+.code {
+    font-family: $font-monospace; 
+    background-color: #F2F2F0;
+    @include rem(padding, 2px 4px);
+    border-radius: $measure-xxs;
+    }
+
+
+mark {
+    @include background-color($color-highlight, 1);
+    padding: 0 0.1em;
+    border-radius: $measure-xxs;
+    }
+
+kbd {
+    font-family: $font-monospace; 
+    @include background-color($color-base, 0.25);
+    @include rem(padding, 8px 8px 6px);
+    border-radius: $measure-xxs;
+    }
+
+pre {
+    white-space: pre-wrap;
+    max-width: 100%;
+    border-radius: $measure-xxs;
+    }
+
+pre code {
+    background-color: transparent;
+    padding: inherit;
+    }
+
+blockquote {
+    border-top: 2px solid $silver;
+    border-bottom: 2px solid $silver;
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: $blue;
+    @include rem(padding, 1px $base-font-size);
+    }
+
+blockquote p {
+    }
+
+figure {
+	margin: 0;
+	}
+
+figcaption {
+    font-size: 0.875em;
+    color: $gray;
+    }
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }

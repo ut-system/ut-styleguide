@@ -1,0 +1,49 @@
+//  Colors –––––––––––––––––––––––––––––––––––––––––––––––
+
+// Brand Colors
+        $orange: #F77F00;
+        $utk-orange: #F77F00;
+        $utc-gold: #DFAA26;
+        $utc-blue:  #00386B;
+        $utm-blue: #002649;
+        $uthsc-green: #006A4D;
+
+        //Interface Colors
+        $rust: #CE6B02;
+        $blue:  #4D7699;
+        $highlight: #FFEFB9;
+
+        // Grayscale
+        $pure-black: #000;
+        $black: #333;
+        $text: #444;
+        $gray: #666;
+        $silver: #CCCCCA;
+        $pearl: #F2F2F0; 
+        $white: #FFF;
+
+// styleguide setup
+
+$color-base: $text;
+$color-muted: $silver;
+$color-muted-alt: $gray;
+$color-canvas: $pearl;
+$color-link: $rust;
+$color-link-focus: $rust;
+$color-highlight: $highlight;
+
+
+@mixin color($color, $opacity: 1) {
+    color: $color; // fallback
+    color: rgba($color, $opacity);
+    }
+
+@mixin background-color($color, $opacity: 1) {
+    background: $color; // fallback
+    background: rgba($color, $opacity);
+    }
+
+@mixin border-color($color, $opacity: 1) {
+    border-color: $color; // fallback
+    border-color: rgba($color, $opacity);
+    }
